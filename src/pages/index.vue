@@ -63,8 +63,7 @@ function isHTMLElement(target: EventTarget): target is HTMLElement {
   <div m-10 flex items-center justify-center>
     <div relative h-80 w-50 flex flex-col justify-center>
       <template v-for="(item) in componentsArr" :key="item.id">
-        <component :is="item.component" :data-index="item.id" absolute :style="getItemStyle(item.id)"
-          @click="(e: MouseEvent) => handleClickItem(e)" />
+        <component :is="item.component" :data-index="item.id" absolute :style="getItemStyle(item.id)" @click="(e: MouseEvent) => handleClickItem(e)" />
       </template>
     </div>
   </div>
