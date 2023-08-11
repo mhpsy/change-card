@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import CardItem from '~/components/CardItem.vue'
 import { createVNode } from 'vue'
+import CardItem from '~/components/CardItem.vue'
 
 defineOptions({
   name: 'IndexPage',
